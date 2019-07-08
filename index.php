@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<H1><u>RTI DATA ENTRY</u></H1>
+	</head>
+<body> 
+	<link href = "css_form.css" type = "text/css" rel = "stylesheet" />       
+        <form name = "form1" action="modified.php" method = "post" enctype = "multipart/form-data" >  
+	FILE NO:
+	<input type="number" name="file_no">
+	<br><br>
+	Receipt Date:
+	<input type="date" name="receipt_date"> 
+	<br><br>
+	Applicant Name: 
+	<input type="text" name="applicant_name"> 
+	<br> <br>
+	Email id: 
+	<input type="text" name="email_id"> 
+	<br> <br>
+	Country:
+	<select name="country">
+	<option value="">India</option> </select>
+	
+	State:
+	<select name="stateslist">
+		<option value="">Select State</option>
+		<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+		<option value="Assam">Assam</option>
+		<option value="Bihar">Bihar</option>
+		<option value="Chandigarh">Chandigarh</option>
+		<option value="Chhattisgarh">Chhattisgarh</option>
+		<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+		<option value="Daman and Diu">Daman and Diu</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Goa">Goa</option>
+		<option value="Gujarat">Gujarat</option>
+		<option value="Haryana">Haryana</option>
+		<option value="Himachal Pradesh">Himachal Pradesh</option>
+		<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+		<option value="Jharkhand">Jharkhand</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Kerala">Kerala</option>
+		<option value="Lakshadweep">Lakshadweep</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Manipur">Manipur</option>
+		<option value="Meghalaya">Meghalaya</option>
+		<option value="Mizoram">Mizoram</option>
+		<option value="Nagaland">Nagaland</option>
+		<option value="Odisha">Odisha</option>
+		<option value="Pondicherry">Pondicherry</option>
+		<option value="Punjab">Punjab</option>
+		<option value="Rajasthan">Rajasthan</option>
+		<option value="Sikkim">Sikkim</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Tripura">Tripura</option>
+		<option value="Uttaranchal">Uttaranchal</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="West Bengal">West Bengal</option>
+	</select>
+	<br><br>
+  
+	<label for="SOURCE_OF_APP">SELECT SOURCE OF APPLICATION: </label> 
+        <select name="SOURCE_OF_APP" id="SOURCE_OF_APP"> 
+            <option value="MOHF&W">MOHF&W </option> 
+            <option value="AIIMS_ND">AIIMS New Delhi</option> 
+            <option value="APPLICANT">Applicant</option> 
+			<option value="OTHER">Other</option>
+        </select> 
+		<br><br>
+
+	APPLICATION FEE:
+         
+        <input type="radio" name="app_fee" id="yes"> 
+        <label for="yes">YES</label>
+        <input type="radio" name="app_fee" id="no"> 
+        <label for="no">NO</label> 
+		<br><br>
+	<div class="main">
+	Amount Paid:
+	<label for="currency-field"></label>
+	<input type="text" name="currency-field" id="currency-field" value="" data-type="currency" placeholder="Rs.10">
+	
+		
+	<br><br>
+	
+	Reply Date:
+	<input type="date" name="submission_date"> 
+	<br><br>
+  
+	 
+	<br><br>						
+	Appeal Status:						
+	<input type="radio" name="appeal_status" id="yes"> 
+        <label for="yes">YES</label>
+        <input type="radio" name="appeal_status" id="no"> 
+        <label for="no">NO</label>	
+		<br><br>
+	Appeal Date:	
+	<input type="date" name="appeal_date"> 
+	<br><br>	
+  
+    Remark: 
+	<textarea rows="4" cols="50">
+	</textarea>	
+	<br><br>
+	  <input type="submit" value="Submit"> 
+		
+</form>  
+  
+</body> 
+</html> 
